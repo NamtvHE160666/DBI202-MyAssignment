@@ -1,0 +1,79 @@
+```mermaid
+graph TD
+    A[Tiêu chuẩn ANM Y tế Việt Nam] --> B(I. Nền tảng & Khung pháp lý Quốc gia)
+    A --> C(II. Các Tiêu chuẩn Quốc tế Chuyên biệt & Thực hành Tốt nhất)
+    A --> D(III. Các Lĩnh vực An ninh mạng trọng tâm)
+    A --> E(IV. Vòng đời Triển khai & Cải tiến)
+
+    B --> B1[Luật An toàn thông tin mạng]
+    B --> B2[Nghị định 13/2023/NĐ-CP về Bảo vệ Dữ liệu Cá nhân]
+    B --> B3[Quyết định 326/QĐ-BYT (Quy chế Đảm bảo ATTT, ANM Bộ Y tế)]
+    B --> B4[Các văn bản pháp luật Y tế khác (liên quan đến HSBAĐT,...)]
+
+    C --> C1[ISO/IEC 27001:2013 (Hệ thống Quản lý ATTT - ISMS)]
+    C1 --> C1a[Phạm vi: Toàn diện, nền tảng]
+    C1 --> C1b[Yêu cầu: Đánh giá rủi ro, chính sách, quy trình, kiểm soát]
+
+    C --> C2[ISO 27799:2016 (Quản lý ATTT trong Y tế theo ISO 27002)]
+    C2 --> C2a[Phạm vi: Chuyên biệt Y tế, bổ trợ ISO 27001]
+    C2 --> C2b[Yêu cầu: Hướng dẫn chi tiết bảo vệ PHI/ePHI trong môi trường y tế]
+
+    C --> C3[NIST Cybersecurity Framework (CSF)]
+    C3 --> C3a[Phạm vi: Khung quản lý rủi ro linh hoạt]
+    C3 --> C3b[Chức năng: Identify, Protect, Detect, Respond, Recover]
+
+    C --> C4[HIPAA Security Rule (Hoa Kỳ)]
+    C4 --> C4a[Phạm vi: Bảo vệ ePHI (bắt buộc tại Mỹ)]
+    C4 --> C4b[Yêu cầu: Administrative, Physical, Technical Safeguards]
+
+    C --> C5[GDPR (Châu Âu)]
+    C5 --> C5a[Phạm vi: Bảo vệ dữ liệu cá nhân (bao gồm dữ liệu y tế)]
+    C5 --> C5b[Yêu cầu: Privacy by Design, Consent, Data Subject Rights, Breach Notification]
+
+    C --> C6[HITRUST CSF (Tích hợp nhiều tiêu chuẩn)]
+    C6 --> C6a[Phạm vi: Khung quản lý rủi ro có thể chứng nhận]
+    C6 --> C6b[Tích hợp: HIPAA, NIST, ISO 27001, v.v.]
+
+    D --> D1[Bảo mật Dữ liệu (Mã hóa, An toàn CSDL)]
+    D1 --> D1a[Dữ liệu "At Rest" (lưu trữ)]
+    D1 --> D1b[Dữ liệu "In Transit" (truyền tải)]
+    D1 --> D1c[Quản lý vòng đời dữ liệu (tạo, lưu, xóa)]
+
+    D --> D2[Quản lý Truy cập & Xác thực]
+    D2 --> D2a[Kiểm soát truy cập dựa trên vai trò (RBAC)]
+    D2b[Xác thực đa yếu tố (MFA)]
+    D2c[Quản lý danh tính (IAM)]
+
+    D --> D3[Bảo mật Mạng (Tường lửa, IPS/IDS, Segmentation)]
+    D3 --> D3a[Phân đoạn mạng (Network Segmentation)]
+    D3b[Bảo vệ chu vi (Perimeter Security)]
+
+    D --> D4[Bảo mật Điểm cuối (Endpoint Security)]
+    D4 --> D4a[Phần mềm chống mã độc, EDR]
+    D4b[Quản lý lỗ hổng & vá lỗi (Vulnerability & Patch Mgmt)]
+    D4c[Bảo mật thiết bị y tế (IoT/IoMT Security)]
+
+    D --> D5[Đào tạo & Nâng cao Nhận thức]
+    D5 --> D5a[Đào tạo định kỳ cho nhân viên]
+    D5b[Kiểm tra/Mô phỏng tấn công lừa đảo (Phishing)]
+
+    D --> D6[Quản lý Sự cố & Ứng phó]
+    D6 --> D6a[Kế hoạch Ứng phó sự cố (IR Plan)]
+    D6b[Phân tích pháp chứng (Forensics)]
+    D6c[Thông báo vi phạm (Breach Notification)]
+
+    D --> D7[Đánh giá & Kiểm toán (Risk Assessment, Audits)]
+    D7 --> D7a[Đánh giá rủi ro định kỳ]
+    D7b[Kiểm toán tuân thủ]
+
+    E --> E1[Đánh giá Hiện trạng & Xác định Khoảng trống]
+    E --> E2[Xây dựng Chính sách & Quy trình]
+    E --> E3[Triển khai & Vận hành các Biện pháp Kỹ thuật/Tổ chức]
+    E --> E4[Giám sát & Đánh giá hiệu quả liên tục]
+    E --> E5[Cải tiến liên tục]
+
+    style A fill:#e0f7fa,stroke:#00796b,stroke-width:2px
+    style B fill:#fffde7,stroke:#ffb300,stroke-width:2px
+    style C fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
+    style D fill:#fbe9e7,stroke:#d84315,stroke-width:2px
+    style E fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
